@@ -1,4 +1,5 @@
 let btn = document.getElementById("change-color-btn");
+let bgColorName = document.querySelector('#bg-colors-name');
 
 btn.addEventListener("click", () => {
   let colors = [
@@ -23,8 +24,9 @@ btn.addEventListener("click", () => {
     "#2C3E50",
     "#F39C12",
   ];
-  let random = Math.random() * 3;
+  let random = Math.random() * colors.length;
   let randomColors = Math.floor(random);
   let selectedColor = colors[randomColors];
   document.body.style.background = selectedColor;
+  bgColorName.textContent = selectedColor;
 });
