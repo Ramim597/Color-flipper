@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(https://static.vecteezy.com/system/resources/thumbnails/008/311/935/small/the-illustration-graphic-consists-of-abstract-background-with-a-blue-gradient-dynamic-shapes-composition-eps10-perfect-for-presentation-background-website-landing-page-wallpaper-vector.jpg);
+
+}
+
+nav {
+    background-color: #262626;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
+
+}
+
+nav ul {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    list-style: none;
+}
+
+nav li {
+    font-size: 20px;
+    height: 100%;
+    padding: 0px 30px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav li:hover {
+    background-color: #444;
+}
+
+nav li a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+nav li:first-child {
+    margin-right: auto;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 200px;
+    background-color: #262626;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    z-index: 999;
+}
+
+/* Sidebar text alignment fix */
+.sidebar li {
+    justify-content: flex-start;
+}
+
+.sidebar li a {
+    justify-content: flex-start;
+    padding-left: 20px;
+}
